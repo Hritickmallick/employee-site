@@ -1,0 +1,38 @@
+uuid: f68ee0d2-0b2e-44d6-925c-48ffd4c2e363
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.last_month_salary
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - bootstrap
+id: views_block__last_month_salary_block_1
+theme: bootstrap
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'views_block:last_month_salary-block_1'
+settings:
+  id: 'views_block:last_month_salary-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      content_editor: content_editor
+      employee: employee

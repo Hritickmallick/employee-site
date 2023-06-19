@@ -1,0 +1,18 @@
+uuid: c33c8796-2c1d-4df2-a715-b3efd94a012d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.salary_slip
+id: node.salary_slip.title
+field_name: title
+entity_type: node
+bundle: salary_slip
+label: 'Salary Slip For The Month'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

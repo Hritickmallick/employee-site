@@ -1,0 +1,25 @@
+uuid: 2bccf6eb-4e56-4e46-b9fb-0446bb69818e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8ac1daf4-5310-4cc2-91d4-a008ee953dc8'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: poweredbyinnoraftsolutionspvtltd
+theme: bootstrap
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:8ac1daf4-5310-4cc2-91d4-a008ee953dc8'
+settings:
+  id: 'block_content:8ac1daf4-5310-4cc2-91d4-a008ee953dc8'
+  label: 'Powered By Innoraft Solutions Pvt LTD'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,82 @@
+uuid: 277aeaf9-7c79-4087-bc56-4761a7d5180a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.salary_slip.field_allowance
+    - field.field.node.salary_slip.field_basic_salary
+    - field.field.node.salary_slip.field_deductions
+    - field.field.node.salary_slip.field_employee_name
+    - field.field.node.salary_slip.field_net_salary
+    - field.field.node.salary_slip.field_status
+    - node.type.salary_slip
+id: node.salary_slip.default
+targetEntityType: node
+bundle: salary_slip
+mode: default
+content:
+  field_allowance:
+    type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_basic_salary:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_deductions:
+    type: number
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_employee_name:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_net_salary:
+    type: number
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_status:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

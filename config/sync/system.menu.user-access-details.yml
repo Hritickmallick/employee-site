@@ -1,0 +1,8 @@
+uuid: f71be292-1d16-4705-9cf3-1a30998634d3
+langcode: en
+status: true
+dependencies: {  }
+id: user-access-details
+label: 'User Access Details'
+description: ''
+locked: false

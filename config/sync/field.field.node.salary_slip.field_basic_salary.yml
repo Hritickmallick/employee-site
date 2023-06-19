@@ -1,0 +1,23 @@
+uuid: 224a79a9-a266-47ef-a000-647d7d488ccc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_basic_salary
+    - node.type.salary_slip
+id: node.salary_slip.field_basic_salary
+field_name: field_basic_salary
+entity_type: node
+bundle: salary_slip
+label: 'Basic Salary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

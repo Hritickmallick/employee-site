@@ -1,0 +1,39 @@
+uuid: 35113aa3-e921-4122-bf57-82707cfa2c23
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.user-access-details
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap
+id: useraccessdetails
+theme: bootstrap
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:user-access-details'
+settings:
+  id: 'system_menu_block:user-access-details'
+  label: 'User Access Details'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      content_editor: content_editor
+      administrator: administrator
+      employee: employee
