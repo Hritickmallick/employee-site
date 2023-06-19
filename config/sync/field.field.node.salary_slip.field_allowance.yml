@@ -1,0 +1,23 @@
+uuid: 5951eb94-7183-47e3-a011-102b70a33d69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_allowance
+    - node.type.salary_slip
+id: node.salary_slip.field_allowance
+field_name: field_allowance
+entity_type: node
+bundle: salary_slip
+label: Allowance
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

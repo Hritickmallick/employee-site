@@ -1,0 +1,73 @@
+uuid: 985bf98a-d986-43d5-a940-de12922f7e3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.salary_slip.field_allowance
+    - field.field.node.salary_slip.field_basic_salary
+    - field.field.node.salary_slip.field_deductions
+    - field.field.node.salary_slip.field_employee_name
+    - field.field.node.salary_slip.field_net_salary
+    - field.field.node.salary_slip.field_status
+    - node.type.salary_slip
+  module:
+    - options
+    - user
+id: node.salary_slip.default
+targetEntityType: node
+bundle: salary_slip
+mode: default
+content:
+  field_allowance:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_basic_salary:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_deductions:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_employee_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_net_salary:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_status:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  links: true

@@ -1,0 +1,20 @@
+uuid: 55333db3-f2e8-4d8f-a7e1-22226d55b672
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_allowance
+field_name: field_allowance
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

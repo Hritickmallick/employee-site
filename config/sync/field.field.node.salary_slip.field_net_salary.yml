@@ -1,0 +1,23 @@
+uuid: 134dab3e-8a61-4bdb-9b5a-a95eb3995502
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_net_salary
+    - node.type.salary_slip
+id: node.salary_slip.field_net_salary
+field_name: field_net_salary
+entity_type: node
+bundle: salary_slip
+label: 'Net Salary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

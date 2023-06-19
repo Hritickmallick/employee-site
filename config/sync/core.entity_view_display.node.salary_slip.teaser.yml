@@ -1,0 +1,32 @@
+uuid: 527a5ed1-7d68-4020-8e9b-53b2d43bbdf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.salary_slip.field_allowance
+    - field.field.node.salary_slip.field_basic_salary
+    - field.field.node.salary_slip.field_deductions
+    - field.field.node.salary_slip.field_employee_name
+    - field.field.node.salary_slip.field_net_salary
+    - field.field.node.salary_slip.field_status
+    - node.type.salary_slip
+  module:
+    - user
+id: node.salary_slip.teaser
+targetEntityType: node
+bundle: salary_slip
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_allowance: true
+  field_basic_salary: true
+  field_deductions: true
+  field_employee_name: true
+  field_net_salary: true
+  field_status: true

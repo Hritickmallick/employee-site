@@ -1,0 +1,40 @@
+uuid: a2eb24de-2537-4aeb-a505-3d9ef730127f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.user_details
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - bootstrap
+id: views_block__user_details_block_1
+theme: bootstrap
+region: highlighted
+weight: -7
+provider: null
+plugin: 'views_block:user_details-block_1'
+settings:
+  id: 'views_block:user_details-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      content_editor: content_editor
+      administrator: administrator
+      employee: employee

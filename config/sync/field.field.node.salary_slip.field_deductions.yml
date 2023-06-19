@@ -1,0 +1,23 @@
+uuid: 6bd44a4a-ee3b-40fd-89d9-129e488567e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_deductions
+    - node.type.salary_slip
+id: node.salary_slip.field_deductions
+field_name: field_deductions
+entity_type: node
+bundle: salary_slip
+label: Deductions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

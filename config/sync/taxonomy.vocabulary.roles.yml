@@ -1,0 +1,8 @@
+uuid: f3229910-d24f-401d-8e79-08edfcba654e
+langcode: en
+status: true
+dependencies: {  }
+name: Roles
+vid: roles
+description: 'position in the company'
+weight: 0
